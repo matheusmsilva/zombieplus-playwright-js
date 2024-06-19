@@ -1,19 +1,20 @@
+require('dotenv').config()
+
 const { Pool } = require('pg')
 
 const DbConfig = {
-    user: 'postgres',
-    host: 'localhost',
-    database: 'dbname',
-    password: '1234',
-    port: 5432
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASS,
+    port: process.env.DB_PORT
 }
 
 export async function executeSQL(sqlScript) {
     try {
         const pool = new Pool(DbConfig)
         const client = await pool.connect()
-        const result = await client.query(sqlScript)
-        console.log(result)
+        await client.query(sqlScript)
     } catch (error) {
         console.log('Erro ao executar SQL', error)
     }

@@ -1,82 +1,60 @@
 {
   "create": {
-    "title": "A Noite dos Mortos-Vivos",
-    "overview": "Um grupo de pessoas se esconde de zumbis sedentos de sangue em uma casa de fazenda.",
-    "company": "Universal Pictures",
-    "release_year": 1970,
-    "featured": false,
-    "cover": "images/a_noite_dos_mortos_vivos.png"
-  },
-  "o_despertar_dos_mortos": {
-    "title": "O Despertar dos Mortos",
-    "overview": "Seguindo uma epidemia crescente de zumbis, dois membros da equipe S.W.A.T. da Filadélfia, um repórter de trânsito e sua namorada executiva de televisão procuram refúgio em um shopping isolado.",
-    "company": "Warner Bros. Pictures",
-    "release_year": 1978,
-    "featured": false,
-    "cover": "images/o_despertar_dos_mortos.png"
-  },
-  "exterminio": {
-    "title": "Extermínio",
-    "overview": "Quatro semanas após um vírus misterioso e incurável se espalhar pelo Reino Unido, um punhado de sobreviventes tenta encontrar um santuário.",
-    "company": "Sony Pictures",
-    "release_year": 2002,
-    "featured": false,
-    "cover": "images/exterminio.png"
-  },
-  "todo_mundo_quase_morto": {
-    "title": "Todo Mundo Quase Morto",
-    "overview": "A vida sem graça de um homem é interrompida pelo apocalipse zumbi.",
-    "company": "Paramount Pictures",
-    "release_year": 2004,
-    "featured": false,
-    "cover": "images/todo_mundo_quase_morto.png"
-  },
-  "guerra_mundial_z": {
     "title": "Guerra Mundial Z",
-    "overview": "O ex-funcionário das Nações Unidas, Gerry Lane, percorre o mundo em uma corrida contra o tempo para deter a pandemia zumbi que está derrubando exércitos e governos, ameaçando destruir a humanidade.",
-    "company": "Amazon Studios",
+    "overview": "Um ex-investigador da ONU é chamado para investigar a propagação de um vírus mortal que transforma as vítimas em zumbis, ameaçando dizimar a população mundial.",
+    "company": "Paramount Pictures",
     "release_year": 2013,
-    "featured": false,
-    "cover": "images/guerra_mundial_z.png"
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
   },
-  "resident_evil": {
-    "title": "Resident Evil",
-    "overview": "Uma unidade militar especial luta contra um supercomputador descontrolado e centenas de cientistas que se transformaram em criaturas carnívoras após um acidente de laboratório.",
-    "company": "Fox Entertainment",
+  "duplicate": {
+    "title": "Resident Evil: O Hospedeiro",
+    "overview": "Alice se junta a sobreviventes para enfrentar a Corporação Umbrella e os zumbis mutantes criados por ela.",
+    "company": "Columbia Pictures",
     "release_year": 2002,
     "featured": false,
-    "cover": "images/resident_evil.png"
+    "cover": "/covers/movies/resident-evil.jpg"
   },
-  "zumbilandia": {
-    "title": "Zumbilândia",
-    "overview": "Um estudante tímido tentando chegar à sua família em Ohio, um cara durão com uma arma tentando encontrar o último Twinkie e duas irmãs tentando chegar a um parque de diversões se unem para viajar pela América infestada de zumbis.",
-    "company": "Lionsgate Films",
-    "release_year": 2009,
+  "to_remove": {
+    "title": "A Noite dos Mortos-Vivos",
+    "overview": "Um grupo de pessoas fica preso em uma casa enquanto zumbis canibais famintos cercam o local.",
+    "company": "Universal Pictures",
+    "release_year": 1968,
     "featured": false,
-    "cover": "images/zumbilandia.png"
+    "cover": "/covers/movies/mortos-vivos.jpg"
   },
-  "a_epidemia": {
-    "title": "A Epidemia",
-    "overview": "Após um vírus estranho transformar os residentes de Ogden Marsh, Iowa, em psicopatas violentos, um pequeno grupo de sobreviventes deve lutar para sair da cidade.",
-    "company": "Columbia Pictures",
-    "release_year": 2010,
-    "featured": false,
-    "cover": "images/a_epidemia.png"
-  },
-  "invasao_zumbi": {
-    "title": "Invasão Zumbi",
-    "overview": "Enquanto um vírus zumbi irrompe na Coreia do Sul, os passageiros lutam para sobreviver no trem de Seul para Busan.",
-    "company": "Walt Disney Studios",
-    "release_year": 2016,
-    "featured": false,
-    "cover": "images/invasao_zumbi.png"
-  },
-  "eu_sou_a_lenda": {
-    "title": "Eu Sou a Lenda",
-    "overview": "Anos após uma praga matar a maior parte da humanidade e transformar o restante em monstros, o único sobrevivente em Nova York luta bravamente para encontrar uma cura.",
-    "company": "Netflix",
-    "release_year": 2007,
-    "featured": false,
-    "cover": "images/eu_sou_a_lenda.png"
+  "search": {
+    "input": "zumbi",
+    "outputs": [
+      "Zumbilândia",
+      "Orgulho e Preconceito e Zumbis",
+      "Meu Namorado é um Zumbi"
+    ],
+    "data": [
+      {
+        "title": "Zumbilândia",
+        "overview": "Um grupo improvável de sobreviventes navega por um mundo cheio de zumbis, tentando encontrar um lugar seguro.",
+        "company": "Sony Pictures",
+        "release_year": 2009,
+        "featured": true,
+        "cover": "/caminho/para/zumbilandia.png"
+      },
+      {
+        "title": "Orgulho e Preconceito e Zumbis",
+        "overview": "Elizabeth Bennet e Sr. Darcy unem forças para combater uma praga de zumbis que assola a Inglaterra.",
+        "company": "Universal Pictures",
+        "release_year": 2016,
+        "featured": false,
+        "cover": "/caminho/para/orgulho_e_preconceito_e_zumbis.png"
+      },
+      {
+        "title": "Meu Namorado é um Zumbi",
+        "overview": "Em um mundo pós-apocalíptico, uma jovem se apaixona por um zumbi que ainda preserva algumas características humanas.",
+        "company": "Fox Entertainment",
+        "release_year": 2013,
+        "featured": false,
+        "cover": "/caminho/para/meu_namorado_e_um_zumbi.png"
+      }
+    ]
   }
 }

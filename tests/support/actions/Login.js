@@ -1,4 +1,4 @@
-const { expect } = require('@playwright/test')
+const { expect } = require('../../support');
 
 export class Login {
     constructor(page) {
@@ -6,13 +6,13 @@ export class Login {
     }
 
     async do(email, password, username) {
-        this.visit()
-        this.submit(email, password)
-        this.isLoggedIn(username)
+        await this.visit()
+        await this.submit(email, password)
+        await this.isLoggedIn(username)
     }
 
     async visit() {
-        await this.page.goto('http://localhost:3000/admin/login')
+        await this.page.goto('/admin/login')
         const loginForm = this.page.locator('.login-form')
         await expect(loginForm).toBeVisible()
     }
@@ -32,5 +32,4 @@ export class Login {
         const loggedUser = this.page.locator('.logged-user')
         await expect(loggedUser).toHaveText(`Olá, ${username}`)
     }
-
 }
