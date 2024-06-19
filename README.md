@@ -28,5 +28,9 @@ npx playwright test
 npx playwright show-report
 ```
 
+## Project architecture
+
+This project uses the AppActions design pattern, which involves creating classes based on your application's features. Each class is responsible for all methods related to its feature. 
+
 <hr>
 Course available at https://qaxperience.com
