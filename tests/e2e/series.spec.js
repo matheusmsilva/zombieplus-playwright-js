@@ -46,16 +46,16 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
     ])
 })
 
-// test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
-//     const series = data.search
+test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
+    const series = data.search
     
-//     series.data.forEach(async (s) => {
-//         await executeSQL(`DELETE from tvshows WHERE title = '${s.title}';`)
-//         await request.api.postSerie(s)
-//     })
+    series.data.forEach(async (s) => {
+        await executeSQL(`DELETE from tvshows WHERE title = '${s.title}';`)
+        await request.api.postSerie(s)
+    })
 
-//     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
-//     await page.series.go()
-//     await page.series.search(series.input)
-//     await page.series.tableHaveContent(series.outputs)
-// })
+    await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
+    await page.series.go()
+    await page.series.search(series.input)
+    await page.series.tableHaveContent(series.outputs)
+})

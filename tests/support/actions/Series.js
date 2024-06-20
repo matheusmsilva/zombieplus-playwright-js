@@ -54,8 +54,11 @@ export class Series {
     }
 
     async tableHaveContent(content) {
-        const rows = this.page.getByRole('row')
-        await expect(rows).toContainText(content)
+        const contentList = Array.isArray(content) ? content : [content]
+        for (const c of contentList) {
+            const row = await this.page.locator(`//td[text()="${c}"]`)
+            await expect(row).toBeVisible()
+        }
     }
 
     async alertHaveText(target) {

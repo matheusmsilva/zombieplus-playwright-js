@@ -40,14 +40,14 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
     ])
 })
 
-// test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
-//     const movies = data.search
+test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
+    const movies = data.search
     
-//     movies.data.forEach(async (m) => {
-//         await executeSQL(`DELETE from movies WHERE title = '${m.title}';`)
-//         await request.api.postMovie(m)
-//     })
-//     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
-//     await page.movies.search(movies.input)
-//     await page.movies.tableHaveContent(movies.outputs)
-// })
+    movies.data.forEach(async (m) => {
+        await executeSQL(`DELETE from movies WHERE title = '${m.title}';`)
+        await request.api.postMovie(m)
+    })
+    await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
+    await page.movies.search(movies.input)
+    await page.movies.tableHaveContent(movies.outputs)
+})
