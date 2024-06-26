@@ -13,17 +13,27 @@ Repository for the automated testing project of the Zombie Plus system, built in
 
 ## 🤖 How to run
 
-1. Clone the repository and install dependencies
+1. Clone the repository and install dependencies for application on folder **application/web** and **application/api**
 ```
 npm install
 ```
 
-2. Run tests in Headless mode
+2. Start the application locally. It is necessary to run this for Backend and Frontend Layer
+```
+npm run dev
+```
+
+3. Install dependencies for playwright project on root folder
+```
+npm install
+```
+
+4. Run tests in Headless mode
 ```
 npx playwright test 
 ```
 
-3. View the test report
+5. View the test report
 ```
 npx playwright show-report
 ```
